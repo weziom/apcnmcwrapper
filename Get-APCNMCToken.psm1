@@ -11,7 +11,7 @@
  .Parameter Username
   The username used for the login attempt.
 
- .Parameter FirstDayOfWeek
+ .Parameter Password
   The password used for the login attempt.
 
  .Parameter Protocol
@@ -38,7 +38,7 @@ function Get-APCNMCToken {
         [Parameter(Mandatory)]
         [string] $Password,
 
-        [string] $Protocol = "http"
+        [string] $Protocol = "https"
     )
 
     # Some variables to help us along the way
